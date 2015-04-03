@@ -1,3 +1,5 @@
+;;; transpose-mark.el --- Transpose data using the Emacs mark -*- coding: utf-8; lexical-binding: t -*-
+
 ;; Copyright (C) 2015 Kevin W. van Rooijen <kevin.van.rooijen@attichacker.com>
 ;; This file is part of transpose-mark.
 
@@ -78,3 +80,7 @@ is pointing to."
   (save-excursion
     (goto-char point)
     (insert string)))
+
+(provide 'transpose-mark)
+
+;;; transpose-mark.el ends here
