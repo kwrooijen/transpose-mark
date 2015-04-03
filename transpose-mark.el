@@ -30,7 +30,7 @@
   "Transpose the current region with the previously marked region.
 Once you've transposed one the region is reset."
   (interactive)
-  (if (overlay-start transpose-mark-region-overlay)
+  (if (and transpose-mark-region-overlay (overlay-start transpose-mark-region-overlay))
       (let* ((current-region (buffer-substring-no-properties (mark) (point)))
              (target-start (overlay-start transpose-mark-region-overlay))
              (target-end (overlay-end transpose-mark-region-overlay))
