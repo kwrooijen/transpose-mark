@@ -6,7 +6,7 @@ A small libary that lets you transpose data by leaving an Emacs mark on the line
 
 #### Transpose Mark Line
 
-Transpose a marked line with the current line:
+Transpose a marked line (leave a mark by e.g. searching for something) with the current line:
 
 `M-x transpose-mark`
 or
