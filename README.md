@@ -84,11 +84,11 @@ This is how tmr-end--forward-word is defined:
 * `transpose-mark-region-start-func`
 * `transpose-mark-region-end-func`
 
+### Overlay manipulation functions
 * `tmr-start--forward-word`
 * `tmr-start--backward-word`
 * `tmr-start--forward-char`
 * `tmr-start--backward-char`
-
 * `tmr-end--forward-word`
 * `tmr-end--backward-word`
 * `tmr-end--forward-char`
