@@ -35,9 +35,13 @@
 ;;
 ;;; Code:
 
+(defgroup transpose-mark nil
+  "Transpose Mark group."
+  :prefix "transpose-mark-")
+
 (defface transpose-mark-region-set-face
   '((t :background "#7700ff" :foreground "#ffffff"))
-  "Transpose Marked region face" :group 'transpose-mark)
+  "Transpose Marked region overlay face" :group 'transpose-mark)
 
 (defvar transpose-mark-region-overlay 'nil "Overlay for Transpose Mark Region.")
 
