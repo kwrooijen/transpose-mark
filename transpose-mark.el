@@ -71,6 +71,7 @@ Once you've transposed one the region is reset."
 (defun transpose-mark-line ()
   "Transpose the current line with the line which the current mark is pointing to."
   (interactive)
+  (delete-overlay transpose-mark-region-overlay)
   (let ((col (current-column)))
     (save-excursion
       (beginning-of-line)
@@ -96,7 +97,7 @@ Once you've transposed one the region is reset."
 (defun transpose-mark-save-point ()
   "Create an overlay on the region set for tranposition."
   (deactivate-mark nil)
-  (setq transpose-mark-region-overlay (make-overlay (mark) (point)))
+  (setq-local transpose-mark-region-overlay (make-overlay (mark) (point)))
   (overlay-put transpose-mark-region-overlay 'face 'transpose-mark-region-set-face)
   (message "Transpose Mark Region set!"))
 
