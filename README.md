@@ -68,7 +68,7 @@ or
 `transpose-mark-region-end-func`
 
 
-This is how tmr-end--forward-word is defined:
+This is how tmr-end--forward-char is defined:
 
     (defun tmr-end--forward-char ()
       "Run transpose-mark-region-end-func with forward-char."
