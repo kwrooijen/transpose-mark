@@ -2,9 +2,15 @@
 
 A small libary that lets you transpose data by leaving an Emacs mark on the line you want to transpose.
 
-### Usage
+## Installation
 
-#### Transpose Mark Line
+This package can be installed through [melpa](http://melpa.milkbox.net/):
+
+    M-x package-install transpose-mark
+
+## Usage
+
+### Transpose Mark Line
 
 Transpose a marked line (leave a mark by e.g. searching for something) with the current line:
 
@@ -14,7 +20,7 @@ or
 
 ![transpose-mark](https://raw.githubusercontent.com/attichacker/transpose-mark/master/images/transpose-mark.gif)
 
-#### Transpose Mark Region
+### Transpose Mark Region
 
 Select a region to be transposed, run command, afterwards select another region and run command again.
 
