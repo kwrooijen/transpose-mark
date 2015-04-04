@@ -41,11 +41,13 @@
 
 (defvar transpose-mark-region-overlay 'nil "Overlay for Transpose Mark Region.")
 
+;;;###autoload
 (defun transpose-mark ()
   "If region is active use 'transpose-mark-region', otherwise use 'transpose-mark-line'."
   (interactive)
   (if (region-active-p) (transpose-mark-region) (transpose-mark-line)))
 
+;;;###autoload
 (defun transpose-mark-region ()
   "Transpose the current region with the previously marked region.
 Once you've transposed one the region is reset."
@@ -65,6 +67,7 @@ Once you've transposed one the region is reset."
         (delete-overlay transpose-mark-region-overlay))
     (transpose-mark-save-point)))
 
+;;;###autoload
 (defun transpose-mark-line ()
   "Transpose the current line with the line which the current mark is pointing to."
   (interactive)
@@ -104,3 +107,4 @@ Once you've transposed one the region is reset."
     (insert string)))
 
 (provide 'transpose-mark)
+;;; transpose-mark.el ends here
